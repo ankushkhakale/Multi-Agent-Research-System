@@ -18,6 +18,13 @@ if not GOOGLE_API_KEY:
 if not GOOGLE_API_KEY:
     raise ValueError("GOOGLE_API_KEY not found. Please set it in .env or Streamlit secrets.")
 
+# Sanitize key (remove potential accidental quotes or whitespace)
+GOOGLE_API_KEY = GOOGLE_API_KEY.strip().strip("'").strip('"')
+
+print(f"DEBUG: API Key found. Length: {len(GOOGLE_API_KEY)}")
+print(f"DEBUG: Key starts with: {GOOGLE_API_KEY[:4]}...")
+print(f"DEBUG: Key ends with: ...{GOOGLE_API_KEY[-4:]}")
+
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Model configuration
