@@ -1,13 +1,22 @@
 import os
+import streamlit as st
 from dotenv import load_dotenv
 import google.generativeai as genai
 
 load_dotenv()
 
+# Try getting key from environment (local .env)
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
+# If not found, try getting from Streamlit secrets (cloud deployment)
 if not GOOGLE_API_KEY:
-    raise ValueError("GOOGLE_API_KEY not found in environment variables. Please set it in a .env file.")
+    try:
+        GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+    except Exception:
+        pass
+
+if not GOOGLE_API_KEY:
+    raise ValueError("GOOGLE_API_KEY not found. Please set it in .env or Streamlit secrets.")
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
