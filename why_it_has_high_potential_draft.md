@@ -107,18 +107,3 @@ This analysis will define the critical qubit count $N_{crit}$ at which the neces
 \section{Conclusion}
 
 The high potential of Quantum Computing is rooted in its inherent ability to process information using superposition and entanglement, offering exponential speedups for problems that are currently intractable for classical systems. While the NISQ era presents significant hardware challenges (decoherence and limited qubit count), hybrid quantum-classical algorithms, particularly VQE, provide a viable pathway to demonstrate computational advantage. The integration of robust noise mitigation techniques like ZNE is crucial for achieving reliable results. The expected demonstration of superior convergence rates and solution fidelity for $N \le 30$ QUBO instances, coupled with a theoretical validation of super-polynomial scaling, substantiates the thesis that QC holds the potential to fundamentally redefine the landscape of complex optimization and simulation. Future efforts must focus on scaling hardware capacity and reducing error rates to reach the critical qubit count $N_{crit}$ necessary for widespread practical application.
-
-\section*{Acknowledgments}
-(This section is optional and typically included for funding or collaborative support.)
-
-\begin{thebibliography}{00}
-
-\bibitem{Smith2021} Smith, A. et al., "Superconducting Qubit Architectures and Performance in the NISQ Era," \textit{IEEE Transactions on Quantum Engineering}, 2021. (Placeholder Citation)
-
-\bibitem{Monroe2013} Monroe, C., \& Kim, J., "Scaling the Ion-Trap Quantum Processor," \textit{Science}, vol. 339, no. 6124, pp. 1164-1169, 2013. (Placeholder Citation)
-
-\bibitem{Peruzzo2014} Peruzzo, A. et al., "A Variational Eigenvalue Solver on a Photonic Quantum Simulator," \textit{Nature Communications}, vol. 5, p. 4213, 2014. (Placeholder Citation)
-
-\bibitem{Farhi2014} Farhi, E., Goldstone, J., \& Gutmann, S., "A Quantum Approximate Optimization Algorithm," \textit{arXiv preprint arXiv:1411.4028}, 2014. (Placeholder Citation)
-
-\end{thebibliography}
