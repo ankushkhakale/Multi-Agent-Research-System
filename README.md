@@ -78,8 +78,6 @@ Run the script directly in your terminal for a text-based experience.
 python main.py
 ```
 
-Follow the on-screen prompts to enter your area of interest and select a topic. The output files (`_draft.md` and `_review.txt`) will be saved in the current directory.
-
 ## 📂 Project Structure
 
 ```
